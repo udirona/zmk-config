@@ -18,5 +18,5 @@
 #
 ---
 include:
-  - board: seeeduino_xiao_rp2040
+  - board: sparkfun_pro_micro_rp2040
     shield: qaz
