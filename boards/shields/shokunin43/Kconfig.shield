@@ -1,0 +1,2 @@
+config SHIELD_SHOKUNIN43
+    def_bool $(shields_list_contains,shokunin43)

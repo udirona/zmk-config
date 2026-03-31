@@ -1,0 +1,6 @@
+if SHIELD_SHOKUNIN43
+
+config ZMK_KEYBOARD_NAME
+    default "Shokunin43"
+
+endif # SHIELD_SHOKUNIN43
