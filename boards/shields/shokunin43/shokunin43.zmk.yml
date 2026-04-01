@@ -8,7 +8,7 @@ name: Shokunin43
 type: shield
 
 # Set this to a URL that documents the keyboard.
-url: https://example.com
+url: https://github.com/udirona/Shokunin43 
 
 # Add any features your keyboard supports here.
 # See https://zmk.dev/docs/development/hardware-integration/hardware-metadata-files#features

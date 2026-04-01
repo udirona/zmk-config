@@ -11,6 +11,23 @@
         zmk,physical-layout = &default_layout;
     };
 
+	encoder: encoder {
+		compatible = "alps,ec11";
+        a-gpios = <&gpio0 29 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&gpio0 31 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        steps = <80>;
+        status = "disabled";
+	}
+
+    sensors: sensors {
+        compatible = "zmk,keymap-sensors";
+        sensors = <&encoder>;
+        triggers-per-rotation = <20>;
+        left {
+            triggers-per-rotation = <20>;
+        };
+    };	
+
     kscan: kscan {
         // If the hardware does not use a switch matrix, change this to the
         // appropriate driver and update the properties below to match.
@@ -47,8 +64,6 @@
             ;
     };
 
-	 
-
     default_transform: default_transform {
         // See https://zmk.dev/docs/development/hardware-integration/new-shield#matrix-transform
         // for how to configure this
@@ -66,4 +81,5 @@
             RC(3, 1) RC(3, 2) RC(3, 4) RC(3, 5) RC(3, 7) RC(3, 9) RC(3, 10)
         >;
     };
+
 };
