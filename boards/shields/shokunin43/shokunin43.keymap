@@ -10,7 +10,7 @@
  *   Row 0 : Tab  Q W E R T  Y U I O P  Backspace
  *   Row 1 : Ctrl  A S D F G  H J K L ;  Enter
  *   Row 2 : Shift  Z X C V B  N M , . /  Shift
- *   Row 3 : Gui  Alt  Esc  [ENC]  Space  Alt(1.25u)  Fn
+ *   Row 3 : Gui  Alt  Esc  [ENC]  Space  Alt  Fn
  *
  * Layers:
  *   0 – DEFAULT
