@@ -11,7 +11,7 @@
         zmk,physical-layout = &default_layout;
     };
 
-	encoder: encoder {
+	rot_ec11: encoder {
 		compatible = "alps,ec11";
         a-gpios = <&gpio0 29 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&gpio0 31 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
