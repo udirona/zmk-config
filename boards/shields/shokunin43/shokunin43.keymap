@@ -40,6 +40,10 @@
     };
 };
 
+&caps_word {
+    continue-list = <UNDERSCORE MINUS>;
+};
+
 / {
     conditional_layers {
         compatible = "zmk,conditional-layers";
@@ -52,6 +56,15 @@
 
 /* ── Key matrix ────────────────────────────────────────────────────────────── */
 / {
+    behaviors {
+        cap_cmd: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LSHFT>, <&caps_word>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -78,7 +91,7 @@
             /*  LCTRL         A          S         D         F         G         H          J          K          L      SEMI      RET       */
                 &trans    &kp PSCRN  &kp HOME  &kp PG_UP &kp PG_DN &kp END   &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &trans    &kp APOS
             /*  LSHFT         Z          X     C         V         B             N          M      COMMA      DOT        FSLH      RSHFT */
-                &trans    &kp TILDE  &kp GRAVE &trans    &kp INS    &kp K_APP      CG_LEFT    CG_RGHT    &trans    &trans &trans    &trans
+                &trans    &kp TILDE  &kp GRAVE &trans    &tran    &kp K_APP      CG_LEFT    CG_RGHT &kp INS   &trans     &trans    &trans
             /*                  LGUI    LALT   &lt 1 ESC C_MUTE  &lt 2 SPACE      RALT      RCTRL               */
                                 &trans  &trans  &trans  &trans   &trans   &trans   &trans
             >;
