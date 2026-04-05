@@ -79,7 +79,7 @@
             >;
 
             /* Encoder: rotate = volume up/down, press = mute (mapped above as C_MUTE) */
-            sensor-bindings = <&inc_dec_kp DOWN UP>;
+            sensor-bindings = <&inc_dec_kp UP DOWN>;
         };
 
         /* ── Layer 1 : FN1 (Space-thumb hold) ─────────────────────────────── */
@@ -91,7 +91,7 @@
             /*  LCTRL         A          S         D         F         G         H          J          K          L      SEMI      RET       */
                 &trans    &kp PSCRN  &kp HOME  &kp PG_UP &kp PG_DN &kp END   &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &trans    &kp APOS
             /*  LSHFT         Z          X     C         V         B             N          M      COMMA      DOT        FSLH      RSHFT */
-                &trans    &kp TILDE  &kp GRAVE &trans    &tran    &kp K_APP      CG_LEFT    CG_RGHT &kp INS   &trans     &trans    &trans
+                &trans    &kp TILDE  &kp GRAVE &trans    &trans    &kp K_APP      CG_LEFT    CG_RGHT &kp INS   &trans     &trans    &trans
             /*                  LGUI    LALT   &lt 1 ESC C_MUTE  &lt 2 SPACE      RALT      RCTRL               */
                                 &trans  &trans  &trans  &trans   &trans   &trans   &trans
             >;
