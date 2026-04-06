@@ -70,7 +70,7 @@
 /* ── Key matrix ────────────────────────────────────────────────────────────── */
 / {
     behaviors {
-        cap_cmd: tap_dance_0 {
+        cap_cmd: cap_words {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
@@ -100,11 +100,11 @@
             display-name = "FN1";
             bindings = <
             /*  TAB           Q          W         E         R         T         Y          U          I          O          P         BSPC  */
-                &kp GRAVE &kp N1     &kp N2    &kp N3    &kp N4    &kp N5    &kp N6     &kp N7     &kp N8     &kp N9     &kp N0    &kp DEL
+                &kp trans &kp N1     &kp N2    &kp N3    &kp N4    &kp N5    &kp N6     &kp N7     &kp N8     &kp N9     &kp N0    &kp DEL
             /*  LCTRL         A          S         D         F         G         H          J          K          L      SEMI      RET       */
-                &trans    &kp PSCRN  &kp HOME  &kp PG_UP &kp PG_DN &kp END   &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &trans    &kp APOS
-            /*  LSHFT         Z          X     C         V         B             N          M      COMMA      DOT        FSLH      RSHFT */
-                &trans    &kp TILDE  &kp GRAVE &trans    &trans    &kp K_APP      CG_LEFT    CG_RGHT &kp INS   &trans     &trans    &trans
+                &trans    &kp PSCRN  &kp HOME  &kp PG_UP &kp PG_DN &kp END   &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp DQT   &kp APOS
+            /*  LSHFT         Z          X     C         V         B             N       M       COMMA     DOT        FSLH      RSHFT */
+                &trans    &kp TILDE  &kp GRAVE &trans    &trans    &kp K_APP     CG_LEFT CG_RGHT &kp INS   &trans     &trans    &trans
             /*                  LGUI    LALT   &lt 1 ESC C_MUTE  &lt 2 SPACE      RALT      RCTRL               */
                                 &trans  &trans  &trans  &trans   &trans   &trans   &trans
             >;
