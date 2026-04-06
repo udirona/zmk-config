@@ -92,7 +92,7 @@
             >;
 
             /* Encoder: rotate = volume up/down, press = mute (mapped above as C_MUTE) */
-            sensor-bindings = <&inc_dec_kp UP DOWN>;
+            sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
         };
 
         /* ── Layer 1 : FN1 (Space-thumb hold) ─────────────────────────────── */
@@ -131,7 +131,7 @@
             bindings = <
                 &bootloader &trans  &trans  &trans  &trans  &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR   
               &studio_unlock A_F4        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans
-                &trans       C_F4        &trans        &trans        &trans        &trans        CG_LEFT  CG_RGHT &trans  &trans  &trans  &trans
+                &trans       C_F4        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans
                             &trans       &trans        &trans        &trans        &trans        &trans        &trans
             >;
 
