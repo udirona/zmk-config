@@ -103,9 +103,9 @@
         fn1_layer {
             display-name = "FN1";
             bindings = <
-                &kp trans &kp N1     &kp N2    &kp N3    &kp N4    &kp N5    &kp N6     &kp N7     &kp N8     &kp N9     &kp N0    &kp DEL
-                &trans    &kp PSCRN  &kp HOME  &kp PG_UP &kp PG_DN &kp END   &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp DQT   &kp APOS
-                &trans    &kp TILDE  &kp GRAVE &trans    &trans    &kp K_APP     CG_LEFT CG_RGHT &kp INS   &trans     &trans    &trans
+                &trans  &kp N1     &kp N2    &kp N3    &kp N4    &kp N5    &kp N6     &kp N7     &kp N8     &kp N9     &kp N0    &kp DEL
+                &trans  &kp PSCRN  &kp HOME  &kp PG_UP &kp PG_DN &kp END   &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp DQT   &kp APOS
+                &trans  &kp TILDE  &kp GRAVE &trans    &trans    &kp K_APP CG_LEFT    CG_RGHT    &kp INS   &trans     &trans    &trans
                                 &trans  &trans  &trans  &trans   &trans   &trans   &trans
             >;
 
