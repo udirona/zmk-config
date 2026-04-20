@@ -84,7 +84,7 @@
             display-name = "DEFAULT";
             bindings = <
                 &kp TAB   &kp Q  &kp W  &kp E  &kp R  &kp T    &kp Y  &kp U  &kp I      &kp O    &kp P     &bspc_del
-                &kp LCTRL &kp A  &kp S  &kp D  &kp F  &kp G    &kp H  &kp J  &kp K      &kp L    &mt LALT SEMI &kp RET
+                &kp LCTRL &kp A  &kp S  &kp D  &kp F  &kp G    &kp H  &kp J  &kp K      &kp L    &mt LALT SEMI &mt LCTRL RET
                 &cap_cmd &kp Z  &kp X  &kp C  &kp V  &kp B    &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
                             &kp LGUI  &kp LALT &lt FN1 ESC  &kp C_MUTE  &lt FN2 SPACE  &kp RALT  &kp RCTRL 
             >;
@@ -96,7 +96,7 @@
         /* ── Layer 1 : FN1 (Space-thumb hold) ─────────────────────────────── */
             /*  TAB           Q          W         E         R         T         Y          U          I          O          P         BSPC  */
             /*  LCTRL         A          S         D         F         G         H          J          K          L      SEMI      RET       */
-            /*  LSHFT         Z          X     C         V         B             N       M       COMMA     DOT        FSLH      RSHFT */
+            /*  LSHFT         Z          X         C         V         B             N       M       COMMA     DOT        FSLH      RSHFT */
             /*                  LGUI    LALT   &lt 1 ESC C_MUTE  &lt 2 SPACE      RALT      RCTRL               */
         fn1_layer {
             display-name = "FN1";
