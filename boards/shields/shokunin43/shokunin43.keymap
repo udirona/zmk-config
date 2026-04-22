@@ -41,7 +41,7 @@
 };
 
 &caps_word {
-    continue-list = <UNDERSCORE MINUS>;
+    continue-list = <UNDERSCORE MINUS BACKSPACE DELETE SPACE>;
 };
 
 / {
@@ -70,7 +70,6 @@
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp LSHFT>, <&caps_word>;
-			continue-list = <UNDERSCORE>, <BACKSPACE>, <DELETE>, <SPACE>;
         };
     };
 };
