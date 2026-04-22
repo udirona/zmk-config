@@ -70,6 +70,7 @@
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp LSHFT>, <&caps_word>;
+			continue-list = <UNDERSCORE>, <BACKSPACE>, <DELETE>, <SPACE>;
         };
     };
 };
