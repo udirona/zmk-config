@@ -14,8 +14,9 @@
  *
  * Layers:
  *   0 – DEFAULT
- *   1 – FN1  (activated by Space-thumb key)
- *   3 – Sys  (activated by Esc-thumb key, labelled "Esc?")
+ *   1 – FN1  (activated by left-thumb key)
+ *   2 – FN2  (activated by right-thumb key)
+ *   3 – Sys  (activated by left- and right-thumb key)
  */
 
 
@@ -90,7 +91,7 @@
             >;
 
             /* Encoder: rotate = volume up/down, press = mute (mapped above as C_MUTE) */
-            sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp DOWN UP>;
         };
 
         /* ── Layer 1 : FN1 (Space-thumb hold) ─────────────────────────────── */
@@ -103,7 +104,7 @@
             bindings = <
                 &trans  &kp N1     &kp N2    &kp N3    &kp N4    &kp N5    &kp N6     &kp N7     &kp N8     &kp N9     &kp N0    &kp DEL
                 &trans  &kp PSCRN  &kp HOME  &kp PG_UP &kp PG_DN &kp END   &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp DQT   &kp APOS
-                &trans  &kp TILDE  &kp GRAVE &trans    &trans    &kp K_APP CG_LEFT    CG_RGHT    &kp INS   &trans     &trans    &trans
+                &trans  &kp TILDE  &kp GRAVE &trans    &trans    &kp K_APP CG_LEFT    CG_RGHT    &kp INS    &trans     &trans    &trans
                                 &trans  &trans  &trans  &trans   &trans   &trans   &trans
             >;
 
