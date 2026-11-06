@@ -92,7 +92,6 @@
                             &kp LGUI  &kp LALT &lt FN1 ESC  &kp C_MUTE  &lt FN2 SPACE  &kp RALT  &kp RCTRL 
             >;
 
-            /* Encoder: rotate = volume up/down, press = mute (mapped above as C_MUTE) */
             sensor-bindings = <&inc_dec_kp DOWN UP>;
         };
 
@@ -106,10 +105,11 @@
             bindings = <
                 &trans  &kp N1     &kp N2    &kp N3    &kp N4    &kp N5    &kp N6     &kp N7     &kp N8     &kp N9     &kp N0    &kp DEL
                 &trans  &kp PSCRN  &kp HOME  &kp PG_UP &kp PG_DN &kp END   &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp DQT   &kp APOS
-                &trans  &kp TILDE  &kp GRAVE &trans    &trans    &kp K_APP CG_LEFT    CG_RGHT    &kp G_LEFT &kp G_RGHT &kp INS   &trans
+                &trans  &kp TILDE  &kp GRAVE &trans    &trans    &kp K_APP CG_LEFT    CG_RGHT    G_LEFT     G_RGHT     &kp INS   &trans
                                 &trans  &trans  &trans  &trans   &trans   &trans   &trans
             >;
 
+            /* Encoder: rotate = volume up/down, press = mute (mapped above as C_MUTE) */
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
@@ -132,7 +132,7 @@
             bindings = <
                 &bootloader &trans  &trans  &trans  &trans  &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR   
               &studio_unlock A_F4        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans
-                &trans       C_F4        &trans        &trans        &kp CAG_2     &kp CAG_1     &trans  &trans  &trans  &trans  &trans
+                &trans       C_F4        &trans        &trans        CAG_2         CAG_1         &trans  &trans  &trans  &trans  &trans  &trans
                             &trans       &trans        &trans        &trans        &trans        &trans        &trans
             >;
 
