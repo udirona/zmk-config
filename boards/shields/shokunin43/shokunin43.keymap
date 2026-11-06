@@ -23,14 +23,16 @@
  #define CG_LEFT &kp LG(LC(LEFT))
  #define CG_RGHT &kp LG(LC(RIGHT))
 // #define AG_UP &kp LA(UP)
-// #define G_LEFT &kp  LG(LEFT)
-// #define G_RGHT &kp  LG(RIGHT)
+#define G_LEFT &kp  LG(LEFT)
+#define G_RGHT &kp  LG(RIGHT)
 // #define G_UP &kp    LG(UP)
 // #define G_DOWN &kp  LG(DOWN)
  #define A_F4 &kp    LA(F4)
  #define C_F4 &kp    LC(F4)
  #define FN1 1 
  #define FN2 2 
+ #define CAG_1 &kp LG(LC(LA(N1)
+ #define CAG_2 &kp LG(LC(LA(N2)
 
 /* ── Encoder behaviour ─────────────────────────────────────────────────────── */
 / {
@@ -42,7 +44,7 @@
 };
 
 &caps_word {
-    continue-list = <UNDERSCORE MINUS BACKSPACE DELETE SPACE>;
+    continue-list = <UNDERSCORE MINUS BACKSPACE DELETE FN2 SPACE>;
 };
 
 / {
@@ -104,7 +106,7 @@
             bindings = <
                 &trans  &kp N1     &kp N2    &kp N3    &kp N4    &kp N5    &kp N6     &kp N7     &kp N8     &kp N9     &kp N0    &kp DEL
                 &trans  &kp PSCRN  &kp HOME  &kp PG_UP &kp PG_DN &kp END   &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp DQT   &kp APOS
-                &trans  &kp TILDE  &kp GRAVE &trans    &trans    &kp K_APP CG_LEFT    CG_RGHT    &kp INS    &trans     &trans    &trans
+                &trans  &kp TILDE  &kp GRAVE &trans    &trans    &kp K_APP CG_LEFT    CG_RGHT    &kp G_LEFT &kp G_RGHT &kp INS   &trans
                                 &trans  &trans  &trans  &trans   &trans   &trans   &trans
             >;
 
@@ -130,7 +132,7 @@
             bindings = <
                 &bootloader &trans  &trans  &trans  &trans  &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR   
               &studio_unlock A_F4        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans
-                &trans       C_F4        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans
+                &trans       C_F4        &trans        &trans        &kp CAG_2     &kp CAG_1     &trans  &trans  &trans  &trans  &trans
                             &trans       &trans        &trans        &trans        &trans        &trans        &trans
             >;
 
