@@ -44,7 +44,7 @@
 };
 
 &caps_word {
-    continue-list = <UNDERSCORE MINUS BACKSPACE DELETE FN2 SPACE>;
+    continue-list = <UNDERSCORE MINUS BACKSPACE DELETE SPACE>;
 };
 
 / {
