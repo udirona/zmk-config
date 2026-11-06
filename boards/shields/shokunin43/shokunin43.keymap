@@ -23,16 +23,16 @@
  #define CG_LEFT &kp LG(LC(LEFT))
  #define CG_RGHT &kp LG(LC(RIGHT))
 // #define AG_UP &kp LA(UP)
-#define G_LEFT &kp  LG(LEFT)
-#define G_RGHT &kp  LG(RIGHT)
+#define G_LEFT &kp LG(LEFT)
+#define G_RGHT &kp LG(RIGHT)
 // #define G_UP &kp    LG(UP)
 // #define G_DOWN &kp  LG(DOWN)
- #define A_F4 &kp    LA(F4)
- #define C_F4 &kp    LC(F4)
+ #define A_F4 &kp LA(F4)
+ #define C_F4 &kp LC(F4)
  #define FN1 1 
  #define FN2 2 
- #define CAG_1 &kp LG(LC(LA(N1)
- #define CAG_2 &kp LG(LC(LA(N2)
+ #define CAG_1 &kp LG(LC(LA(N1)))
+ #define CAG_2 &kp LG(LC(LA(N2)))
 
 /* ── Encoder behaviour ─────────────────────────────────────────────────────── */
 / {
